@@ -38,6 +38,18 @@ This notebook builds, trains, and validates a deep neural network loan approval 
     
     We then validated whether the model’s predictions can be explained to end-users in a clear and actionable manner. Using SHAP (SHapley Additive exPlanations), we generated Feature importance plots that illustrates which input variables most influence approval probability and Customer-specific explanations that summarised why an application was approved or rejected, and how to improve outcomes.
 
+## Key Outputs
+
+| Output | File | Description |
+|:--------|:------|:-------------|
+| Model Performance | model_metrics.json | Accuracy, AUC, F1 |
+| Fairness Plots | bias_plots/*.png | Confusion, ROC, PR curves |
+| Equalised Odds | equalised_odds_*.csv | Subgroup fairness tables |
+| Explainability | customer_explanations.txt | SHAP explanations |
+| Feature Importance | feature_importance.png | Most influential features |
+
+---
+
 ## Requirements
 
 The notebook runs directly in Google Colab, but you can also execute it locally:
@@ -73,53 +85,6 @@ venv\Scripts\activate         # on Windows
 pip install -r requirements.txt
 
 jupyter notebook IS4246_Model_pynb.ipynb
-
----
-
-## Validation Metrics
-
-| Metric | Description |
-|:--------|:-------------|
-| Accuracy | Overall model correctness on test set |
-| AUC (ROC) | Ability to distinguish approved vs rejected applicants |
-| Equalised Odds | Fairness check across sensitive subgroups |
-| Permutation Importance | Measures contribution of each feature |
-| SHAP Explanations | Individual-level interpretability for loan decisions |
-
----
-
-## Fairness Assessment
-
-The notebook computes Equalised Odds per subgroup:
-- Education: Graduate vs Not Graduate  
-- Employment Type: Self-Employed vs Salaried  
-- Number of Dependents: 0–4  
-
-Each subgroup’s True Positive Rate (TPR) and False Positive Rate (FPR) differences are summarised in `/results/equalised_odds_summary.json`.
-
----
-
-## Explainability & Transparency
-
-Using SHAP, the framework generates natural-language explanations for approval or rejection decisions.  
-Each customer report includes:
-- Key factors influencing the outcome  
-- Recommended improvement actions  
-- Predicted approval probability  
-
-Example excerpts are stored in `/results/customer_explanations.txt`.
-
----
-
-## Key Outputs
-
-| Output | File | Description |
-|:--------|:------|:-------------|
-| Model Performance | model_metrics.json | Accuracy, AUC, F1 |
-| Fairness Plots | bias_plots/*.png | Confusion, ROC, PR curves |
-| Equalised Odds | equalised_odds_*.csv | Subgroup fairness tables |
-| Explainability | customer_explanations.txt | SHAP explanations |
-| Feature Importance | feature_importance.png | Most influential features |
 
 ---
 
