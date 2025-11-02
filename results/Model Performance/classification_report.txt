@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+    Rejected       0.91      0.96      0.94       242
+    Approved       0.98      0.94      0.96       399
+
+    accuracy                           0.95       641
+   macro avg       0.94      0.95      0.95       641
+weighted avg       0.95      0.95      0.95       641
