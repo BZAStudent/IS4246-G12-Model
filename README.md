@@ -38,34 +38,6 @@ This notebook builds, trains, and validates a deep neural network loan approval 
     
     We then validated whether the model’s predictions can be explained to end-users in a clear and actionable manner. Using SHAP (SHapley Additive exPlanations), we generated Feature importance plots that illustrates which input variables most influence approval probability and Customer-specific explanations that summarised why an application was approved or rejected, and how to improve outcomes.
 
-
-
-## Repository Structure
-
-loan-fairness-validation/
-│
-├── fairness_validation.ipynb        ← Main notebook (Google Colab compatible)
-│
-├── data/
-│   └── synthetic_loan_data.csv       ← Small sample dataset (non-confidential)
-│
-├── results/
-│   ├── model_metrics.json            ← Accuracy, AUC, threshold, F1
-│   ├── feature_importance.png        ← Permutation feature importance plot
-│   ├── equalised_odds_education.csv  ← Fairness by education level
-│   ├── equalised_odds_employment.csv ← Fairness by employment type
-│   ├── equalised_odds_dependents.csv ← Fairness by dependents count
-│   ├── equalised_odds_summary.json   ← Summary of TPR/FPR gaps
-│   ├── bias_plots/
-│   │   ├── confusion_matrix.png
-│   │   ├── roc_curve.png
-│   │   └── pr_curve.png
-│   └── customer_explanations.txt     ← SHAP-based customer-level explanations
-│
-└── README.md
-
----
-
 ## Requirements
 
 The notebook runs directly in Google Colab, but you can also execute it locally:
@@ -79,19 +51,22 @@ pip install scikit-learn shap seaborn matplotlib pandas
 
 ### Option 1 — Run in Google Colab
 Click the badge below to open and execute the notebook directly:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/loan-fairness-validation/blob/main/fairness_validation.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BZAStudent/IS4246-G12-Model/blob/main/IS4246_Model_pynb.ipynb)
 
-1. Run all cells sequentially.  
-2. All generated outputs (metrics, bias plots, SHAP explanations) will appear under `/results/`.
+1. Under section 2, change the dataset location to the appropriate folder.
+2. Run all cells sequentially.  
+3. All generated outputs (metrics, bias plots, and SHAP explanations) will appear under sections 10 – 12.
+
 
 ### Option 2 — Run Locally
 
-git clone https://github.com/<your-username>/loan-fairness-validation.git
-cd loan-fairness-validation
+git clone https://github.com/BZAStudent/IS4246-G12-Model.git
+cd IS4246-G12-Model
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate      # on macOS/Linux
+venv\Scripts\activate         # on Windows
 pip install -r requirements.txt
-jupyter notebook fairness_validation.ipynb
+jupyter notebook IS4246_Model_pynb.ipynb
 
 ---
 
