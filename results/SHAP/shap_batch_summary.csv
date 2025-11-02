@@ -1,0 +1,5 @@
+customer_id,description,decision,probability,top_factors,num_factors
+CUST_001,"High-risk: Not graduate, self-employed, 4 dependents",APPROVED,0.47475770115852356,Strong Profile,0
+CUST_002,"Low-risk: Graduate, salaried, strong finances",APPROVED,0.9826050996780396,Strong Profile,0
+CUST_003,Borderline: Graduate but high loan-to-income ratio,APPROVED,0.55924391746521,Strong Profile,0
+CUST_004,Very high-risk: Multiple concerning factors,REJECTED,0.41221943497657776,"no_of_dependents, education",3
