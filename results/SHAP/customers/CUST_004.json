@@ -1,0 +1,23 @@
+{
+  "customer_id": "CUST_004",
+  "description": "Very high-risk: Multiple concerning factors",
+  "prediction": "False",
+  "probability": 0.41221943497657776,
+  "factors": [
+    {
+      "feature": "no_of_dependents",
+      "impact": 0.0,
+      "value": 0
+    },
+    {
+      "feature": "education",
+      "impact": 0.0,
+      "value": "Not Graduate"
+    },
+    {
+      "feature": "self_employed",
+      "impact": 0.0,
+      "value": "Yes"
+    }
+  ]
+}
