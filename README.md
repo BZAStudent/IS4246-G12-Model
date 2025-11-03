@@ -72,17 +72,16 @@ Click the badge below to open and execute the notebook directly:
 
 ### Option 2 — Run Locally
 
-git clone https://github.com/BZAStudent/IS4246-G12-Model.git
+1. git clone https://github.com/BZAStudent/IS4246-G12-Model.git
 
-cd IS4246-G12-Model
+2. Navigate to the project directory with`cd IS4246-G12-Model` 
 
-python -m venv venv
+3. Create a virtual environment with `python -m venv venv`
 
-source venv/bin/activate      # on macOS/Linux
+4. Activate the virtual environment using `source venv/bin/activate` if using macOS/Linux
+or `venv\Scripts\activate` if using Windows
 
-venv\Scripts\activate         # on Windows
-
-pip install -r requirements.txt
+5. Install dependencies with `pip install -r requirements.txt`
 
 jupyter notebook IS4246_Model_pynb.ipynb
 
