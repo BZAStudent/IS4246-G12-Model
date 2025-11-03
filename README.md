@@ -83,7 +83,7 @@ or `venv\Scripts\activate` if using Windows
 
 5. Install dependencies with `pip install -r requirements.txt`
 
-jupyter notebook IS4246_Model_pynb.ipynb
+6. run `python is4246_model_pynb.py` to run the model
 
 ---
 
