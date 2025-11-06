@@ -1,0 +1,11 @@
+feature,importance
+cibil_score,0.402978
+loan_amount,0.047198
+income_annum,0.047196
+loan_term,0.042043
+luxury_assets_value,0.014355
+residential_assets_value,0.012605
+self_employed,0.006233
+commercial_assets_value,0.005606
+education,0.005482
+no_of_dependents,0.005096

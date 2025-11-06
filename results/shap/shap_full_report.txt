@@ -1,0 +1,317 @@
+Performing Detailed SHAP Analysis...
+=== SHAP FEATURE IMPORTANCE ===
+PermutationExplainer explainer: 101it [00:27,  2.45it/s]
+TOP 10 FEATURES BY IMPORTANCE:
+                 feature  importance
+             cibil_score    0.402978
+             loan_amount    0.047198
+            income_annum    0.047196
+               loan_term    0.042043
+     luxury_assets_value    0.014355
+residential_assets_value    0.012605
+           self_employed    0.006233
+ commercial_assets_value    0.005606
+               education    0.005482
+        no_of_dependents    0.005096
+
+================================================================================
+DETAILED LOAN DECISIONS ANALYSIS FOR TEST CUSTOMERS
+================================================================================
+
+CUSTOMER 1 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: REJECTED
+   • Confidence Level: MEDIUM
+   • Approval Probability: 34.8%
+   • Actual Outcome: Approved
+   • Risk Level: HIGH
+
+CUSTOMER BACKGROUND:
+   • Education Level: Graduate
+   • Employment Type: Self-Employed
+   • Dependents: 0 people
+   • Annual Income: $5,000,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $14,900,000
+   • Loan Term: 12 years
+   • Credit Score (CIBIL): 575
+   • Total Assets: $33,200,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 2.98 (loan amount / annual income)
+   • Estimated Monthly Payment: $178,067
+   • Payment-to-Income Ratio: 42.7% of monthly income
+   • Loan Term: 12.0 years (144 months)
+
+KEY REJECTION FACTORS:
+   1. [CRITICAL] Poor Credit History
+      CIBIL score of 575 is below minimum requirement (600+)
+   2. [HIGH] Moderate Debt Burden
+      Annual income is 33.6% of loan amount
+   3. [HIGH] High Payment Burden
+      Monthly payment is 42.7% of monthly income
+
+RECOMMENDATION:
+   Consider improving: improve credit score by clearing outstanding debts, reduce loan amount or increase income
+--------------------------------------------------
+
+CUSTOMER 2 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: APPROVED
+   • Confidence Level: HIGH
+   • Approval Probability: 99.4%
+   • Actual Outcome: Approved
+   • Risk Level: LOW
+
+CUSTOMER BACKGROUND:
+   • Education Level: Graduate
+   • Employment Type: Salaried
+   • Dependents: 4 people
+   • Annual Income: $2,900,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $10,400,000
+   • Loan Term: 6 years
+   • Credit Score (CIBIL): 673
+   • Total Assets: $19,100,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 3.59 (loan amount / annual income)
+   • Estimated Monthly Payment: $192,669
+   • Payment-to-Income Ratio: 79.7% of monthly income
+   • Loan Term: 6.0 years (72 months)
+
+KEY APPROVAL STRENGTHS:
+   1. [STRONG] Strong Asset Backing
+      Assets fully cover the loan amount
+
+RECOMMENDATION:
+   Strong candidate - meets all key approval criteria
+--------------------------------------------------
+
+CUSTOMER 3 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: APPROVED
+   • Confidence Level: HIGH
+   • Approval Probability: 98.6%
+   • Actual Outcome: Approved
+   • Risk Level: LOW
+
+CUSTOMER BACKGROUND:
+   • Education Level: Graduate
+   • Employment Type: Self-Employed
+   • Dependents: 4 people
+   • Annual Income: $9,600,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $30,100,000
+   • Loan Term: 12 years
+   • Credit Score (CIBIL): 870
+   • Total Assets: $50,800,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 3.14 (loan amount / annual income)
+   • Estimated Monthly Payment: $359,719
+   • Payment-to-Income Ratio: 45.0% of monthly income
+   • Loan Term: 12.0 years (144 months)
+
+KEY APPROVAL STRENGTHS:
+   1. [STRONG] Strong Asset Backing
+      Assets fully cover the loan amount
+   2. [VERY STRONG] Excellent Credit History
+      CIBIL score of 870 indicates excellent creditworthiness
+
+RECOMMENDATION:
+   Strong candidate - meets all key approval criteria
+--------------------------------------------------
+
+CUSTOMER 4 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: REJECTED
+   • Confidence Level: MEDIUM
+   • Approval Probability: 20.9%
+   • Actual Outcome: Approved
+   • Risk Level: HIGH
+
+CUSTOMER BACKGROUND:
+   • Education Level: Not Graduate
+   • Employment Type: Salaried
+   • Dependents: 4 people
+   • Annual Income: $8,000,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $29,100,000
+   • Loan Term: 4 years
+   • Credit Score (CIBIL): 421
+   • Total Assets: $50,900,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 3.64 (loan amount / annual income)
+   • Estimated Monthly Payment: $738,051
+   • Payment-to-Income Ratio: 110.7% of monthly income
+   • Loan Term: 4.0 years (48 months)
+
+KEY REJECTION FACTORS:
+   1. [CRITICAL] Poor Credit History
+      CIBIL score of 421 is below minimum requirement (600+)
+   2. [CRITICAL] High Debt Burden
+      Annual income is only 27.5% of loan amount
+   3. [CRITICAL] Very High Payment Burden
+      Monthly payment is 110.7% of monthly income (>50% is risky)
+
+RECOMMENDATION:
+   Consider improving: improve credit score by clearing outstanding debts, reduce loan amount or increase income
+--------------------------------------------------
+
+CUSTOMER 5 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: APPROVED
+   • Confidence Level: HIGH
+   • Approval Probability: 99.4%
+   • Actual Outcome: Approved
+   • Risk Level: LOW
+
+CUSTOMER BACKGROUND:
+   • Education Level: Not Graduate
+   • Employment Type: Salaried
+   • Dependents: 4 people
+   • Annual Income: $700,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $1,800,000
+   • Loan Term: 8 years
+   • Credit Score (CIBIL): 874
+   • Total Assets: $4,200,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 2.57 (loan amount / annual income)
+   • Estimated Monthly Payment: $27,313
+   • Payment-to-Income Ratio: 46.8% of monthly income
+   • Loan Term: 8.0 years (96 months)
+
+KEY APPROVAL STRENGTHS:
+   1. [VERY STRONG] Excellent Credit History
+      CIBIL score of 874 indicates excellent creditworthiness
+   2. [VERY STRONG] Very Strong Asset Backing
+      Assets are 2.3x the loan amount
+
+RECOMMENDATION:
+   Strong candidate - meets all key approval criteria
+--------------------------------------------------
+
+CUSTOMER 6 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: APPROVED
+   • Confidence Level: HIGH
+   • Approval Probability: 93.1%
+   • Actual Outcome: Approved
+   • Risk Level: LOW
+
+CUSTOMER BACKGROUND:
+   • Education Level: Not Graduate
+   • Employment Type: Salaried
+   • Dependents: 5 people
+   • Annual Income: $5,200,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $20,700,000
+   • Loan Term: 2 years
+   • Credit Score (CIBIL): 538
+   • Total Assets: $23,400,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 3.98 (loan amount / annual income)
+   • Estimated Monthly Payment: $955,200
+   • Payment-to-Income Ratio: 220.4% of monthly income
+   • Loan Term: 2.0 years (24 months)
+
+KEY APPROVAL STRENGTHS:
+   1. [STRONG] Strong Asset Backing
+      Assets fully cover the loan amount
+
+RECOMMENDATION:
+   Strong candidate - meets all key approval criteria
+--------------------------------------------------
+
+CUSTOMER 7 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: APPROVED
+   • Confidence Level: HIGH
+   • Approval Probability: 99.8%
+   • Actual Outcome: Approved
+   • Risk Level: LOW
+
+CUSTOMER BACKGROUND:
+   • Education Level: Graduate
+   • Employment Type: Salaried
+   • Dependents: 4 people
+   • Annual Income: $7,200,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $27,400,000
+   • Loan Term: 8 years
+   • Credit Score (CIBIL): 735
+   • Total Assets: $57,200,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 3.81 (loan amount / annual income)
+   • Estimated Monthly Payment: $415,772
+   • Payment-to-Income Ratio: 69.3% of monthly income
+   • Loan Term: 8.0 years (96 months)
+
+KEY APPROVAL STRENGTHS:
+   1. [STRONG] Good Credit History
+      CIBIL score of 735 meets all credit requirements
+   2. [VERY STRONG] Very Strong Asset Backing
+      Assets are 2.1x the loan amount
+
+RECOMMENDATION:
+   Strong candidate - meets all key approval criteria
+--------------------------------------------------
+
+CUSTOMER 8 PROFILE
+--------------------------------------------------
+DECISION SUMMARY:
+   • Final Decision: APPROVED
+   • Confidence Level: HIGH
+   • Approval Probability: 99.6%
+   • Actual Outcome: Approved
+   • Risk Level: LOW
+
+CUSTOMER BACKGROUND:
+   • Education Level: Graduate
+   • Employment Type: Salaried
+   • Dependents: 4 people
+   • Annual Income: $2,900,000
+
+FINANCIAL PROFILE:
+   • Loan Amount Requested: $11,200,000
+   • Loan Term: 10 years
+   • Credit Score (CIBIL): 744
+   • Total Assets: $19,500,000
+
+FINANCIAL RATIOS:
+   • Debt-to-Income Ratio: 3.86 (loan amount / annual income)
+   • Estimated Monthly Payment: $148,009
+   • Payment-to-Income Ratio: 61.2% of monthly income
+   • Loan Term: 10.0 years (120 months)
+
+KEY APPROVAL STRENGTHS:
+   1. [STRONG] Good Credit History
+      CIBIL score of 744 meets all credit requirements
+   2. [STRONG] Strong Asset Backing
+      Assets fully cover the loan amount
+
+RECOMMENDATION:
+   Strong candidate - meets all key approval criteria
+--------------------------------------------------
+
+Detailed SHAP analysis complete.
