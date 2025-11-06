@@ -83,7 +83,7 @@ or `venv\Scripts\activate` if using Windows
 
 5. Install dependencies with `pip install -r requirements.txt`
 
-6. run `python is4246_model_pynb.py` to run the model
+6. run `python is4246_model.py` to run the model
 
 ---
 
