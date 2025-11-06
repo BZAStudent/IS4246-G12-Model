@@ -65,25 +65,10 @@ pip install scikit-learn shap seaborn matplotlib pandas
 Click the badge below to open and execute the notebook directly:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BZAStudent/IS4246-G12-Model/blob/main/IS4246_Model_pynb.ipynb)
 
-1. Under section 2, change the dataset location to the appropriate folder.
-2. Run all cells sequentially.  
-3. All generated outputs (metrics, bias plots, and SHAP explanations) will appear under sections 10 – 12.
-
-
-### Option 2 — Run Locally
-
-1. Clone the repo using `git clone https://github.com/BZAStudent/IS4246-G12-Model.git`
-
-2. Navigate to the project directory with`cd IS4246-G12-Model` 
-
-3. Create a virtual environment with `python -m venv venv`
-
-4. Activate the virtual environment using `source venv/bin/activate` if using macOS/Linux
-or `venv\Scripts\activate` if using Windows
-
-5. Install dependencies with `pip install -r requirements.txt`
-
-6. run `python is4246_model.py` to run the model
+1. Run Environment Setup, Imports & Reproducibility and Data Loading & Preprocessing.
+2. Under section 2, a file-picker dialog will appear where you need to select the csv file to upload. Please upload the "loan_approval_dataset.csv". You can download the loan dataset from the github repo, under "data".
+3. Run all cells sequentially.  
+4. All generated outputs (metrics, bias plots, and SHAP explanations) will appear under sections 10 – 13.
 
 ---
 
