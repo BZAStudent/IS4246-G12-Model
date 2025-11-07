@@ -1,0 +1,13 @@
+feature,importance,type
+cibil_score,0.414153,original
+loan_amount,0.049703,original
+loan_term,0.041561,original
+income_annum,0.039566,original
+luxury_assets_value,0.014617,original
+residential_assets_value,0.010295,original
+self_employed,0.006622,original
+commercial_assets_value,0.006192,original
+bank_asset_value,0.005299,original
+education,0.005045,original
+no_of_dependents,0.004605,original
+has_debt,0.001701,derived

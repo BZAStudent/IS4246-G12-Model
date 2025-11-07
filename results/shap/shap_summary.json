@@ -1,0 +1,67 @@
+{
+  "threshold_used": 0.45,
+  "seed": 42,
+  "num_records": 500,
+  "top_features": [
+    {
+      "feature": "cibil_score",
+      "importance": 0.414153,
+      "type": "original"
+    },
+    {
+      "feature": "loan_amount",
+      "importance": 0.049703,
+      "type": "original"
+    },
+    {
+      "feature": "loan_term",
+      "importance": 0.041561,
+      "type": "original"
+    },
+    {
+      "feature": "income_annum",
+      "importance": 0.039566,
+      "type": "original"
+    },
+    {
+      "feature": "luxury_assets_value",
+      "importance": 0.014617,
+      "type": "original"
+    },
+    {
+      "feature": "residential_assets_value",
+      "importance": 0.010295,
+      "type": "original"
+    },
+    {
+      "feature": "self_employed",
+      "importance": 0.006622,
+      "type": "original"
+    },
+    {
+      "feature": "commercial_assets_value",
+      "importance": 0.006192,
+      "type": "original"
+    },
+    {
+      "feature": "bank_asset_value",
+      "importance": 0.005299,
+      "type": "original"
+    },
+    {
+      "feature": "education",
+      "importance": 0.005045,
+      "type": "original"
+    },
+    {
+      "feature": "no_of_dependents",
+      "importance": 0.004605,
+      "type": "original"
+    },
+    {
+      "feature": "has_debt",
+      "importance": 0.001701,
+      "type": "derived"
+    }
+  ]
+}
